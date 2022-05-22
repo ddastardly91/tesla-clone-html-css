@@ -151,11 +151,11 @@ body {
           justify-content: center;
 }
 
-.container-main .description {
+.container-main .description-top {
   top: 18%;
 }
 
-.container-main .description h1 {
+.container-main .description-top h1 {
   font-size: 40px;
   font-weight: 600;
   margin-top: 15px;
@@ -164,7 +164,7 @@ body {
   color: #171a20;
 }
 
-.container-main .description p {
+.container-main .description-top p {
   margin: 0;
   font-size: 17px;
   font-weight: 500;
@@ -172,10 +172,74 @@ body {
   color: #171a20;
 }
 
+.description-bottom {
+  position: fixed;
+  bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description-bottom .description-bottom__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description-bottom div {
+  margin: 0 30px;
+  padding: 10px;
+}
+
+.description-bottom div h4 {
+  color: white;
+  letter-spacing: 0.5;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.description-bottom div p {
+  color: white;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.description-bottom .description-bottom__button {
+  position: relative;
+  padding: 10px 60px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  border: 3px solid white;
+  border-radius: 25px;
+  top: -5px;
+}
+
+.description-bottom .description-bottom__button:hover {
+  background-color: white;
+  color: #171a20;
+  font-weight: 600;
+  border: 2px solid white;
+}
+
 .in-middle {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1300px) {
+  .navbar-top__link-container-left {
+    visibility: hidden;
+  }
+  .description-bottom {
+    visibility: hidden;
+  }
 }
 /*# sourceMappingURL=style.css.map */
