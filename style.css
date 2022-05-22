@@ -202,10 +202,18 @@ body {
 
 .description-bottom {
   position: fixed;
-  bottom: 35px;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding-bottom: 35px;
+  padding-top: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, black), color-stop(90%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 10%, rgba(0, 0, 0, 0) 90%);
 }
 
 .description-bottom .description-bottom__info {
