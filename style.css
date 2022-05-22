@@ -80,12 +80,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
+  padding: 0 8px;
 }
 
 .navbar-top .navbar-top__link-container-left li {
   list-style-type: none;
-  padding: 5px 15px;
+  padding: 4px 8px;
   -webkit-transition: all 500ms ease-out;
   transition: all 500ms ease-out;
 }
@@ -100,6 +100,7 @@ body {
   color: #333;
   font-size: 14px;
   font-weight: 600;
+  margin: 0 8px;
 }
 
 .navbar-top__link-container-right {

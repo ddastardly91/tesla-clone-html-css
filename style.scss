@@ -58,12 +58,12 @@ body {
 
     ul {
       display: flex;
-      padding: 0;
+      padding: 0 8px;
     }
 
     li {
       list-style-type: none;
-      padding: 5px 15px;
+      padding: 4px 8px;
       transition: all 500ms ease-out;
 
       &:hover {
@@ -76,6 +76,7 @@ body {
         color: #333;
         font-size: 14px;
         font-weight: 600;
+        margin: 0 8px;
       }
     }
   }
