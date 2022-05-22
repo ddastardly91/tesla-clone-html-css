@@ -20,7 +20,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  color: #333;
+  color: #171a20;
   font-weight: 400;
 }
 
@@ -53,7 +53,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 50px;
-  width: 357px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -74,6 +73,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 72px;
 }
 
 .navbar-top .navbar-top__link-container-left ul {
@@ -97,10 +97,11 @@ body {
 
 .navbar-top .navbar-top__link-container-left li a {
   text-decoration: none;
-  color: #333;
+  color: #171a20;
   font-size: 14px;
   font-weight: 600;
   margin: 0 8px;
+  letter-spacing: 0.3;
 }
 
 .navbar-top__link-container-right {
@@ -134,8 +135,47 @@ body {
 
 .navbar-top__link-container-right li a {
   text-decoration: none;
-  color: #333;
+  color: #171a20;
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 0.3;
+}
+
+.container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-main .description {
+  top: 18%;
+}
+
+.container-main .description h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  letter-spacing: 1.4;
+  color: #171a20;
+}
+
+.container-main .description p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.3;
+  color: #171a20;
+}
+
+.in-middle {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /*# sourceMappingURL=style.css.map */
