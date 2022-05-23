@@ -45,26 +45,6 @@ body {
           backdrop-filter: blur(10px);
 }
 
-#menu-bg #menu {
-  position: absolute;
-  width: 400px;
-  height: 100vh;
-  background-color: white;
-  top: 0;
-  right: 0;
-  -webkit-transition: right 300ms;
-  transition: right 300ms;
-}
-
-#menu-bg #menu .btn-close {
-  font-weight: 400;
-  font-size: 20px;
-  padding: 15px;
-  margin: 10px;
-  float: right;
-  cursor: pointer;
-}
-
 .navbar-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,10 +190,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   padding-top: 100px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, black), color-stop(90%, rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, black 10%, rgba(0, 0, 0, 0) 90%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, black), color-stop(70%, rgba(0, 0, 0, 0.448617)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, black 35%, rgba(0, 0, 0, 0.448617) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
 .description-bottom .description-bottom__info {
@@ -226,8 +206,8 @@ body {
 }
 
 .description-bottom div {
-  margin: 0 30px;
-  padding: 10px;
+  margin: 0 15px;
+  padding: 25px;
 }
 
 .description-bottom div h4 {

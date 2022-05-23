@@ -37,25 +37,6 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
-
-  #menu {
-    position: absolute;
-    width: 400px;
-    height: 100vh;
-    background-color: white;
-    top: 0;
-    right: 0;
-    transition: right 300ms;
-
-    .btn-close {
-      font-weight: 400;
-      font-size: 20px;
-      padding: 15px;
-      margin: 10px;
-      float: right;
-      cursor: pointer;
-    }
-  }
 }
 
 .navbar-top {
@@ -174,9 +155,14 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   padding-top: 100px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 90%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(0, 0, 0, 0.44861694677871145) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 
   .description-bottom__info {
     display: flex;
@@ -184,8 +170,8 @@ body {
   }
 
   div {
-    margin: 0 30px;
-    padding: 10px;
+    margin: 0 15px;
+    padding: 25px;
 
     h4 {
       color: white;
@@ -228,6 +214,9 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.menu-toggle {
 }
 
 // MEDIA QUERIES
