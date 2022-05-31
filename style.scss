@@ -216,9 +216,6 @@ body {
   transform: translateY(-50%);
 }
 
-.menu-toggle {
-}
-
 // MEDIA QUERIES
 
 @media only screen and (max-width: 1300px) {
@@ -230,7 +227,6 @@ body {
     visibility: hidden;
   }
 }
-=======
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 body {
@@ -474,4 +470,49 @@ body {
     visibility: hidden;
   }
 }
->>>>>>> f91a7dda9c1030d1de1693e4f5bbce0b6e2e584a
+
+.hamburger-nav {
+  position: absolute;
+  height: calc(100vh - 10px);
+  width: 400px;
+  padding: 5px;
+  background: white;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+  transition: 500ms ease-in-out;
+
+  h2 {
+    margin-left: 30px;
+  }
+
+  .hamburger-nav__close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger-nav__links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-top: 50px;
+
+    a {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      text-decoration: none;
+      color: #171a20;
+    }
+  }
+}
+
+.hamburger-nav__toggle {
+  width: 0;
+  transition: 500ms ease-in-out;
+  visibility: hidden;
+}

@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <!-- MAIN -->
-<!-- <div class="report">
-        <a href="https://www.tesla.com/en_gb/impact">Read Tesla's Impact Report</a>
-    </div> -->
+<div class="hamburger-nav hamburger-nav__toggle">
+    <span class="hamburger-nav__close">X</span>
+    <h2>Navigation</h2>
+    <div class="hamburger-nav__links">
+        <a href="#">Model S</a>
+        <a href="#">Model 3</a>
+        <a href="#">Model X</a>
+        <a href="#">Model Y</a>
+        <a href="#">Solar Roof</a>
+        <a href="#">Solar Panels</a>
+    </div>
+</div>
 <section id="model-s">
     <!-- NAVIGATION -->
     <div class="navbar-top">
@@ -32,7 +41,7 @@
             <ul class="navbar-top__links-right">
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Account</a></li>
-                <li><a href="#">Menu</a></li>
+                <li class="navbar-menu__open"><a href="#">Menu</a></li>
             </ul>
         </div>
     </div>
@@ -69,6 +78,20 @@
     </div>
 
 </section>
+
+<script>
+    const navClose = document.querySelector('.hamburger-nav__close');
+    const navOpen = document.querySelector('.navbar-menu__open');
+    const navMenu = document.querySelector('.hamburger-nav');
+
+    navOpen.addEventListener('click', () => {
+        navMenu.classList.remove('hamburger-nav__toggle');
+    })
+
+    navClose.addEventListener('click', () => {
+        navMenu.classList.add('hamburger-nav__toggle');
+    })
+</script>
 </body>
 
 </html>
